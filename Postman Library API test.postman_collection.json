@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "5c504bae-9ab2-4651-929e-63a47ea3ccd9",
+		"name": "Postman Library API test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28627478"
+	},
+	"item": [
+		{
+			"name": "Submit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n  \"email\": \"f20201099@goa.bits-pilani.ac.in\",\n  \"postmanCollectionJsonUrl\": \"{{submission}}\",\n  \"publishedCourseId\": \"2q2jokzsn62y8\",\n  \"lessonId\": \"go6mgkytvk8u\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://lesson-completion.postmanlabs.com/submit"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "submission",
+			"value": "https://api.postman.com/collections/28627478-d5be73e6-4f3e-4e68-baf7-82ee545a2e92?access_key=PMAT-01HGR710GNFZT1DG9CG87FMRCH",
+			"type": "string"
+		}
+	]
+}
